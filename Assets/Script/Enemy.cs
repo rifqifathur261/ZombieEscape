@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Vector3 direction = target.position - transform.position;
+        // Debug.Log("direction "+ direction);
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
 
